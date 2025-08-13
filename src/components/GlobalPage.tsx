@@ -13,9 +13,13 @@ import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
 import {Tooltip, TooltipTrigger, TooltipContent} from "@/components/ui/tooltip";
 import Footer from "@/components/Footer";
 import Link from 'next/link'
+import {useCurrent} from "@/features/auth/api/use-current";
+import {redirect} from "next/navigation";
 const GlobalPage = () => {
 
+    const {data: user} = useCurrent()
 
+    if (user) redirect('/workspaces/create')
 
 
 
