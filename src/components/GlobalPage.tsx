@@ -68,7 +68,7 @@ const GlobalPage = () => {
             <WobbleCards/>
 
 
-            <div className="relative mt-[200px]">
+            <div className="relative mt-[200px] flex items-center justify-center flex-col">
                 <h1 className='flex items-center justify-center gap-4 my-10 text-xl font-semibold'>Поймите как работает
                     наша система <ArrowBigDownDashIcon/></h1>
 
